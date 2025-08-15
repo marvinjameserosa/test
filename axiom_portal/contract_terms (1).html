@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contract Terms</title>
+    <style>
+      body {
+        background-color: #0a0e17;
+        color: #7eeeff;
+        font-family: "Segoe UI", Arial, sans-serif;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+      }
+      .contract-container {
+        background-color: rgba(16, 24, 38, 0.8);
+        border: 1px solid #2a3b56;
+        border-radius: 10px;
+        padding: 40px 60px;
+        max-width: 600px;
+        box-shadow: 0 0 20px rgba(0, 200, 255, 0.1);
+        position: relative;
+        z-index: 1;
+      }
+      h2 {
+        color: white;
+        font-weight: 300;
+        letter-spacing: 2px;
+        border-bottom: 1px solid #2a3b56;
+        padding-bottom: 15px;
+        margin-top: 0;
+      }
+      p {
+        line-height: 1.6;
+        color: #7aaac3;
+      }
+      .hidden-flag {
+        color: black;
+        font-size: 1.5em;
+      }
+      .offscreen-flag {
+        position: absolute;
+        left: -9999px;
+      }
+      .grid-bg {
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(rgba(16, 24, 38, 0.2) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(16, 24, 38, 0.2) 1px, transparent 1px);
+        background-size: 30px 30px;
+        transform: rotate(45deg);
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-bg"></div>
+
+    <div class="contract-container">
+      <h2>Contract Terms</h2>
+      <p>Congratulations, you've found the contract.</p>
+
+      <!-- Hidden in HTML comment -->
+      <!-- Flag: SEEN{CONTRACT_ACCEPTED_AWAIT_TARGET} -->
+
+      <p class="hidden-flag">Flag: SEEN{CONTRACT_ACCEPTED_AWAIT_TARGET}</p>
+      <p class="offscreen-flag">Flag: SEEN{CONTRACT_ACCEPTED_AWAIT_TARGET}</p>
+    </div>
+  </body>
+</html>

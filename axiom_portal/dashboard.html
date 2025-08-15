@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Axiom Corp - Dashboard</title>
+    <style>
+      body {
+        background-color: #0a0e17;
+        color: #7eeeff;
+        font-family: "Segoe UI", Arial, sans-serif;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .dashboard-container {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      h1 {
+        font-size: 2.5em;
+        font-weight: 300;
+        color: white;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+      }
+      .welcome-text {
+        font-size: 1.2em;
+        color: #7aaac3;
+        margin-bottom: 30px;
+      }
+      .flag {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+        writing-mode: vertical-rl;
+        font-size: 1.2em;
+        color: black;
+        user-select: text;
+      }
+      .grid-bg {
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(rgba(16, 24, 38, 0.2) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(16, 24, 38, 0.2) 1px, transparent 1px);
+        background-size: 30px 30px;
+        transform: rotate(45deg);
+        z-index: 0;
+      }
+      .glow {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(126, 238, 255, 0.05) 0%,
+          rgba(10, 14, 23, 0) 70%
+        );
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-bg"></div>
+    <div class="glow"></div>
+
+    <div class="dashboard-container">
+      <h1>Welcome to Axiom</h1>
+      <div class="welcome-text">Guest Access Protocol Activated</div>
+    </div>
+
+    <div class="flag">SEEN{W3lc0me_T0_Ax1om_Guest}</div>
+  </body>
+</html>

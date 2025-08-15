@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Axiom Corp - Employee Portal</title>
+    <style>
+      body {
+        background-color: #0a0e17;
+        color: #7eeeff;
+        font-family: "Segoe UI", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .login-container {
+        background-color: rgba(16, 24, 38, 0.8);
+        border: 1px solid #2a3b56;
+        border-radius: 10px;
+        padding: 40px;
+        width: 340px;
+        box-shadow: 0 0 20px rgba(0, 200, 255, 0.1);
+      }
+      h1 {
+        color: #ffffff;
+        font-weight: 300;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+      }
+      .logo {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #7eeeff;
+        letter-spacing: 3px;
+      }
+      p {
+        color: #7aaac3;
+        margin-bottom: 30px;
+      }
+      input {
+        width: 100%;
+        background-color: rgba(10, 15, 25, 0.6);
+        color: #ffffff;
+        border: 1px solid #2a3b56;
+        border-radius: 4px;
+        padding: 12px 15px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        box-sizing: border-box;
+        transition: border 0.3s, box-shadow 0.3s;
+      }
+      input:focus {
+        border: 1px solid #7eeeff;
+        box-shadow: 0 0 8px rgba(126, 238, 255, 0.3);
+        outline: none;
+      }
+      button {
+        width: 100%;
+        background: linear-gradient(to right, #1e5799, #2989d8);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 12px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: all 0.3s;
+      }
+      button:hover {
+        background: linear-gradient(to right, #2989d8, #1e5799);
+        box-shadow: 0 0 15px rgba(126, 238, 255, 0.4);
+      }
+      ::placeholder {
+        color: #4a6380;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="logo">AXIOM</div>
+      <h1><b>Employee Portal</b></h1>
+      <p>Secure authentication required</p>
+      <form onsubmit="return login()">
+        <input type="text" id="username" placeholder="Employee ID" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">ACCESS SYSTEM</button>
+      </form>
+    </div>
+
+    <script>
+      function login() {
+        var u = document.getElementById("username").value;
+        var p = document.getElementById("password").value;
+        if (u === "user" && p === "UGGP{Y3ne0og_V0_Cz1qo}") {
+          window.location = "dashboard.html";
+        } else {
+          alert("Invalid credentials.");
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>
