@@ -1,7 +1,0 @@
-{
-  "name": "your-name/your-project",
-  "description": "My PHP application",
-  "require": {
-    "php": "^8.0"
-  }
-}
